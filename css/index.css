@@ -1,0 +1,56 @@
+@import url(common.css);
+
+@font-face {
+  font-family: 'ghanachoco';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ghanachoco.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  background: #f9f9f9;
+  color: #333;
+}
+
+button{
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background: none;
+  border: none;
+}
+
+/* top btn */
+#top_btn{
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 1000;
+}
+
+#top_btn a.active{
+  background: url(../image/top_btn.png) no-repeat;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  display: block;
+  transition: all 0.3s;
+}
+
+#top_btn a.active:hover{
+  background: url(../image/top_btn_in.png) no-repeat;
+}
+
+#wrap{width: 100%;}
+
+/* ||| header ||| */
+
+
+/* ||| visual ||| */
+
+
+/* ||| section ||| */
+
+
+/* ||| footer ||| */
+
