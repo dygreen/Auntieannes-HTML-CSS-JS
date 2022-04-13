@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>앤티앤스 프레즐</title>
   <link rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
 </head>
 <body>
   <!-- top btn -->
@@ -13,34 +15,141 @@
   <div id="wrap">
     <!-- header -->
     <header>
-
+      <div class="gnb">
+        <!-- logo -->
+        <div class="logo">
+          <a href="#"><img src="image/logo.png" alt="logo"></a>
+        </div>
+        <!-- navbar -->
+        <nav>
+          <ul class="clear">
+            <li><a href="#">앤티앤스<span><img src="image/menubar.png" alt="menu img" class="menu_img"></span></a>
+              <ul class="lnb lnb1">
+                <li><a href="#">앤티앤스 스토리</a></li>
+                <li><a href="#">아이덴티티</a></li>
+                <li><a href="#">히스토리</a></li>
+              </ul>
+            </li>
+            <li><a href="#">메뉴소개<span><img src="image/menubar.png" alt="menu img" class="menu_img"></span></a>
+              <ul class="lnb lnb2">
+                <li><a href="#">NEW!</a></li>
+                <li><a href="#">ALL</a></li>
+                <li><a href="#">클래식 프레즐</a></li>
+                <li><a href="#">스틱 프레즐</a></li>
+                <li><a href="#">핫도그 프레즐</a></li>
+                <li><a href="#">딥</a></li>
+                <li><a href="#">에이드</a></li>
+                <li><a href="#">커피</a></li>
+              </ul>
+            </li>
+            <li><a href="#">이벤트<span><img src="image/menubar.png" alt="menu img" class="menu_img"></span></a>
+              <ul class="lnb lnb3">
+                <li><a href="#">진행중인 이벤트</a></li>
+                <li><a href="#">종료된 이벤트</a></li>
+                <li><a href="#">당첨자 발표</a></li>
+              </ul>
+            </li>
+            <li><a href="#">커뮤니티<span><img src="image/menubar.png" alt="menu img" class="menu_img"></span></a>
+              <ul class="lnb lnb4">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">고객의 소리</a></li>
+                <li><a href="#">문의 답변 확인</a></li>
+                <li><a href="#">자주하는 질문</a></li>
+                <li><a href="#">제휴/제안</a></li>
+              </ul>
+            </li>
+            <li><a href="#">프랜차이즈<span><img src="image/menubar.png" alt="menu img" class="menu_img"></span></a>
+              <ul class="lnb lnb5">
+                <li><a href="#">개설조건 및 절차</a></li>
+                <li><a href="#">개설비용 및 안내</a></li>
+                <li><a href="#">가맹관련 FAQ</a></li>
+                <li><a href="#">가맹상담신청</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <!-- side button -->
+        <div class="sideBtn">
+          <span class="iconify" data-icon="charm:menu-hamburger"></span>
+        </div>
+      </div>
     </header>
-
-
-    <!-- visual -->
+    
+    <!-- side menu -->
+    <div class="sideMenu">
+      <ul>
+        <li class="li1"><a href="#">고객소통방</a></li>
+        <li class="li2"><a href="#">매장찾기</a></li>
+        <li class="li3"><a href="#">가맹상담</a></li>
+        <li class="li4"><a href="#">딜리버리</a></li>
+      </ul>
+    </div>
+    
+    
+    <!-- visual(slide) -->
     <div id="visual">
-
+      <!-- image -->
+      <div class="image">
+        <div class="image1"></div>
+        <div class="image2"></div>
+        <div class="image3"></div>
+      </div>
+      <!-- button(next, prev) -->
+      <div class="btn">
+        <div class="next">
+          <span class="material-icons">arrow_forward_ios</span>
+          </div>
+        <div class="prev">
+          <span class="material-icons">arrow_back_ios</span>
+        </div>
+      </div>
+      <!-- button(bottom) -->
+      <div class="btn_bottom">
+        <div class="btn1"><span class="material-icons">circle</span></div>
+        <div class="btn2"><span class="material-icons">circle</span></div>
+        <div class="btn3"><span class="material-icons">circle</span></div>
+      </div>
     </div>
 
 
     <!-- section -->
     <section>
-      <!-- new & event -->
-      <div id="new">
-        <div class="title"></div>
-        <div class="sub"></div>
-        <div class="video"></div>
+      <!-- event -->
+      <div id="event">
+        <div class="event_text">
+          <div class="title"><p>EVENT</p></div>
+          <div class="sub"><p>다양하게 진행중인 이벤트를 즐겨보세요!</p></div>
+        </div>
+        <div class="video">
+          <iframe width="400" height="300" src="https://www.youtube.com/embed/0WFOSHVo9Og" title="auntieannes youtube" frameborder="0"></iframe>
+        </div>
+
         <!-- 이미지 수동 슬라이드 -->
+        <div class="event_slide">
+          <div class="image1"></div>
+          <div class="image2"></div>
+          <div class="image3"></div>
+        </div>
       </div>
 
       <!-- identity -->
       <div id="ident">
-
+        <div class="ident_all">
+          <p class="ident1">Better than the best ever tasted</p>
+          <p class="ident2">지금까지 맛볼 수 없었던 최상의 맛을 경험하세요.</p>
+        </div>
       </div>
 
       <!-- (tab) menu -->
       <div id="menu">
-
+        <!-- tab -->
+        <ul>
+          <li><a href="#">NEW!</a></li>
+          <li><a href="#">클래식 프레즐</a></li>
+          <li><a href="#">스틱 프레즐</a></li>
+          <li><a href="#">핫도그 프레즐</a></li>
+          <li><a href="#">에이드</a></li>
+        </ul>
       </div>
 
       <!-- community -->
@@ -57,8 +166,29 @@
 
     <!-- footer -->
     <footer>
-
+      <!-- logo -->
+      <div class="logo2">
+        <img src="image/logo.png" alt="logo_bottom">
+      </div>
+      <!-- address -->
+      <div class="address">
+        <p>(주)재원푸드 서울특별시 서초구 반포대로 22 (서초동 1451-34번지) 서초평화빌딩 10층</p>
+        <p>TEL. 02-587-0955 FAX. 02-587-0956</p>
+      </div>
+      <!-- icon -->
+      <ul>
+        <li><a href="#"><span class="iconify" data-icon="akar-icons:facebook-fill"></span></a></li>
+        <li><a href="#"><span class="iconify" data-icon="akar-icons:instagram-fill"></span></a></li>
+        <li><a href="#"><span class="iconify" data-icon="ri:kakao-talk-fill"></span></a></li>
+      </ul>
+      <!-- copy -->
+      <div class="copy">
+        COPYRIGHT &copy; 2020 AUNTIE ANNE'S KOREA, ALL RIGHTS RESERVED.
+      </div>
     </footer>
   </div>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>

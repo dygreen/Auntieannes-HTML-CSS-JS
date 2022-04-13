@@ -1,6 +1,20 @@
 @charset "utf-8"; /* 다국어용 문자셋팅 */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&display=swap');
-
+@font-face {
+	font-family: 'NanumBarunGothic';
+	font-style: normal;
+	font-weight: 400;
+	src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+	src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+ }
+ 
+ @font-face {
+	font-family: 'NanumBarunGothic';
+	font-style: normal;
+	font-weight: 700;
+	src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+	src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+ }
 
 *{  /* 전체선택자->모든 태그에 여백을 뺌 */
 	margin:0;
@@ -48,7 +62,7 @@ h1,h2,h3,h4,h5,h6{font-size:100%;}
 body,input,textarea{
 	font-size:14px;  /*모든글자 기본글자크기*/
 	font-weight:100; /* IE8 이하버전 대응 */
-	font-family: 'Nanum Gothic', sans-serif;
+	font-family: 'NanumBarunGothic', sans-serif;
 }
 
 img{
