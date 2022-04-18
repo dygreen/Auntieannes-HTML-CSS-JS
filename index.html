@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>앤티앤스 프레즐</title>
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
 </head>
 <body>
   <!-- top btn -->
   <div id="top_btn"><a href="#" class="active"></a></div>
-
+  
   <div id="wrap">
     <!-- header -->
     <header>
@@ -89,49 +89,103 @@
     <!-- visual(slide) -->
     <div id="visual">
       <!-- image -->
-      <div class="image">
-        <div class="image1"></div>
-        <div class="image2"></div>
-        <div class="image3"></div>
+      <div class="slide">
+        <ul class="image">
+          <li class="image1"></li>
+          <li class="image2"></li>
+          <li class="image3"></li>
+        </ul>
       </div>
-      <!-- button(next, prev) -->
-      <div class="btn">
-        <div class="next">
-          <span class="material-icons">arrow_forward_ios</span>
-          </div>
-        <div class="prev">
-          <span class="material-icons">arrow_back_ios</span>
+      <div class="slide_btn">
+        <!-- bottom btn -->
+        <div class="btn_bottom">
+          <ul>
+            <li class="indent active">btn1</li>
+            <li class="indent">btn2</li>
+            <li class="indent">btn3</li>
+          </ul>
+        </div>
+          <!-- play/stop btn -->
+        <div class="btn_playStop">
+          <ul>
+            <li class="play">
+              <span class="material-icons">play_arrow</span>
+            </li>
+            <li class="stop">
+              <span class="material-icons">pause</span>
+            </li>
+          </ul>
         </div>
       </div>
-      <!-- button(bottom) -->
-      <div class="btn_bottom">
-        <div class="btn1"><span class="material-icons">circle</span></div>
-        <div class="btn2"><span class="material-icons">circle</span></div>
-        <div class="btn3"><span class="material-icons">circle</span></div>
+      <!-- next, prev btn -->
+      <div class="btn_side">
+        <div class="next">
+          <span class="iconify" data-icon="tabler:player-track-next"></span>
+        </div>
+        <div class="prev">
+          <span class="iconify" data-icon="tabler:player-track-prev"></span>
+        </div>
       </div>
     </div>
-
-
+    
+    
     <!-- section -->
     <section>
       <!-- event -->
       <div id="event">
         <div class="event_text">
-          <div class="title"><p>EVENT</p></div>
-          <div class="sub"><p>다양하게 진행중인 이벤트를 즐겨보세요!</p></div>
+          <div class="title">
+            <p>EVENT</p>
+            <p>PROMOTION &</p>
+          </div>
+          <div class="sub">
+            <p>다양하게 진행중인 이벤트를 즐겨보세요!</p>
+          </div>
         </div>
         <div class="video">
           <iframe width="400" height="300" src="https://www.youtube.com/embed/0WFOSHVo9Og" title="auntieannes youtube" frameborder="0"></iframe>
         </div>
-
+        
         <!-- 이미지 수동 슬라이드 -->
         <div class="event_slide">
-          <div class="image1"></div>
-          <div class="image2"></div>
-          <div class="image3"></div>
+          <ul>
+            <li>
+              <a href="#" class="clear"><img src="image/event1.jpeg" alt="event img"></a>
+              <div class="block block1">
+                <p>앤티앤스 신제품 나왔고구마 이벤트🍠</p>
+              </div>
+            </li>
+            <li>
+              <a href="#" class="clear"><img src="image/event2.jpeg" alt="event img"></a>
+              <div class="block block2"><p>먹고 싶은 앤티앤스 메뉴는?🥨</p></div>
+            </li>
+            <li>
+              <a href="#" class="clear"><img src="image/event3.jpeg" alt="event img"></a>
+              <div class="block block3"><p>앤티앤스 프레즐 아이디어 챌린지💡</p></div>
+            </li>
+            <li>
+              <a href="#" class="clear"><img src="image/event4.jpeg" alt="event img"></a>
+              <div class="block block4"><p>앤티앤스 이달의 추천 메뉴!</p></div>
+            </li>
+            <li>
+              <a href="#" class="clear"><img src="image/event5.jpeg" alt="event img"></a>
+              <div class="block block5"><p>전제품 머지포인트 할인 이벤트</p></div>
+            </li>
+            <li>
+              <a href="#" class="clear"><img src="image/event6.jpeg" alt="event img"></a>
+              <div class="block block6"><p>앤티앤스 음료 중 여러분의 pick은?</p></div>
+            </li>
+          </ul>
+        </div>
+        <!-- next/prev 버튼 -->
+        <div class="btn_next">
+          <span class="iconify" data-icon="fa-regular:hand-point-right"></span>
+        </div>
+        <div class="btn_prev">
+          <span class="iconify" data-icon="fa-regular:hand-point-left"></span>
         </div>
       </div>
-
+      
       <!-- identity -->
       <div id="ident">
         <div class="ident_all">
@@ -139,7 +193,7 @@
           <p class="ident2">지금까지 맛볼 수 없었던 최상의 맛을 경험하세요.</p>
         </div>
       </div>
-
+      
       <!-- (tab) menu -->
       <div id="menu">
         <!-- tab -->
@@ -151,19 +205,19 @@
           <li><a href="#">에이드</a></li>
         </ul>
       </div>
-
+      
       <!-- community -->
       <div id="comm">
-
+        
       </div>
-
+      
       <!--  -->
       <div id="slider">
-
+        
       </div>
     </section>
-
-
+    
+    
     <!-- footer -->
     <footer>
       <!-- logo -->
@@ -189,6 +243,6 @@
   </div>
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
-  <script src="js/index.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
