@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>앤티앤스 프레즐</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>앤티앤스 프레즐</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
   <!-- top btn -->
   <div id="top_btn"><a href="#" class="active"></a></div>
   
   <div id="wrap">
+    <!-- background visual -->
+    <div class="back_visual"></div>
+
     <!-- header -->
     <header>
       <div class="gnb">
@@ -145,6 +151,9 @@
         <div class="video">
           <iframe width="400" height="300" src="https://www.youtube.com/embed/0WFOSHVo9Og" title="auntieannes youtube" frameborder="0"></iframe>
         </div>
+        <div class="sticker">
+          <span class="iconify" data-icon="clarity:new-solid"></span>
+        </div>
         
         <!-- 이미지 수동 슬라이드 -->
         <div class="event_slide">
@@ -165,11 +174,11 @@
             </li>
             <li>
               <a href="#" class="clear"><img src="image/event4.jpeg" alt="event img"></a>
-              <div class="block block4"><p>앤티앤스 이달의 추천 메뉴!</p></div>
+              <div class="block block4"><p>앤티앤스 이달의 추천 메뉴🥰</p></div>
             </li>
             <li>
               <a href="#" class="clear"><img src="image/event5.jpeg" alt="event img"></a>
-              <div class="block block5"><p>전제품 머지포인트 할인 이벤트</p></div>
+              <div class="block block5"><p>전제품 머지포인트 할인 이벤트🎉</p></div>
             </li>
             <li>
               <a href="#" class="clear"><img src="image/event6.jpeg" alt="event img"></a>
@@ -194,16 +203,121 @@
         </div>
       </div>
       
-      <!-- (tab) menu -->
-      <div id="menu">
-        <!-- tab -->
-        <ul>
-          <li><a href="#">NEW!</a></li>
-          <li><a href="#">클래식 프레즐</a></li>
-          <li><a href="#">스틱 프레즐</a></li>
-          <li><a href="#">핫도그 프레즐</a></li>
-          <li><a href="#">에이드</a></li>
-        </ul>
+      <!-- tab menu -->
+      <div id="tab">
+        <div class="tab_all">
+          <div class="tab_title">
+            <p class="title">Auntie Anne's MENU</p>
+            <p class="sub">앤티앤스의 다양한 프레즐과 음료들</p>
+          </div>
+          <!-- tab button-->
+          <ul class="clear tab_button">
+            <li class="selected">NEW!</li>
+            <li>클래식 프레즐</li>
+            <li>스틱 프레즐</li>
+            <li>핫도그 프레즐</li>
+            <li>에이드</li>
+          </ul>
+  
+          <!-- tab content -->
+          <ul class="tab_content clear">
+            <li class="tab1 new show">
+              <ul>
+                <li>
+                  <div class="back"></div>
+                  <a href="#"><img src="image/new1.png" alt="item"></a>
+                  <p>갈릭 페퍼 치즈 핫도그</p>
+                </li>
+                <li>
+                  <div class="back"></div>
+                  <a href="#"><img src="image/new2.png" alt="item"></a>
+                  <p>갈릭 크림치즈 스틱</p>
+                </li>
+                <li>
+                  <div class="back"></div>
+                  <a href="#"><img src="image/new3.png" alt="item" class="img3"></a>
+                  <p>애플망고 음료 2종</p>
+                </li>
+              </ul>
+            </li>
+            <li class="tab2 classic">
+              <ul>
+                <li>
+                  <div class="back"></div>
+                  <a href="#"><img src="image/classic1.png" alt="item"></a>
+                  <p>오리지널 프레즐</p>
+                </li>
+                <li>
+                  <div class="back"></div>
+                  <a href="#"><img src="image/classic2.png" alt="item"></a>
+                  <p>아몬드 프레즐</p>
+                </li>
+                <li>
+                  <div class="back"></div>
+                  <a href="#"><img src="image/classic3.png" alt="item"></a>
+                  <p>시나몬 슈가 프레즐</p>
+                </li>
+              </ul>
+            </li>
+            <li class="tab3 stix">
+              <ul>
+                <li>
+                  <div class="back"></div>
+                  <a href="#"><img src="image/stix1.png" alt="item"></a>
+                  <p>오리지널 스틱</p>
+                </li>
+                <li>
+                  <div class="back"></div>
+                  <a href="#"><img src="image/stix2.png" alt="item"></a>
+                  <p>아몬드 스틱</p>
+                </li>
+                <li>
+                  <div class="back"></div>
+                  <a href="#"><img src="image/stix3.png" alt="item"></a>
+                  <p>시나몬 슈가 스틱</p>
+                </li>
+              </ul>
+            </li>
+            <li class="tab4 hotdog">
+              <ul>
+                <li>
+                  <div class="back"></div>
+                  <a href="#"><img src="image/hotdog1.png" alt="item"></a>
+                  <p>오리지널 핫도그</p>
+                </li>
+                <li>
+                  <div class="back"></div>
+                  <a href="#"><img src="image/hotdog2.png" alt="item"></a>
+                  <p>할라피뇨 치즈 핫도그</p>
+                </li>
+                <li>
+                  <div class="back"></div>
+                  <a href="#"><img src="image/hotdog3.png" alt="item"></a>
+                  <p>블백페퍼 치즈 핫도그</p>
+                </li>
+              </ul>
+            </li>
+            <li class="tab5 ade">
+              <ul>
+                <li>
+                  <div class="back"></div>
+                  <a href="#"><img src="image/ade1.png" alt="item"></a>
+                  <p>레몬에이드(ICE)</p>
+                </li>
+                <li>
+                  <div class="back"></div>
+                  <a href="#"><img src="image/ade2.png" alt="item"></a>
+                  <p>블루 큐라소 레몬에이드(ICE)</p>
+                </li>
+                <li>
+                  <div class="back"></div>
+                  <a href="#"><img src="image/ade3.png" alt="item"></a>
+                  <p>키위 바나나 레몬에이드(ICE)</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
       
       <!-- community -->
@@ -241,8 +355,5 @@
       </div>
     </footer>
   </div>
-  <script src="js/jquery-3.6.0.min.js"></script>
-  <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
-  <script src="js/main.js"></script>
 </body>
 </html>

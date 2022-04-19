@@ -10,16 +10,18 @@ $(document).ready(function(){
     $(this).find(">ul").stop().slideUp();
   });
   
-  // gnb scroll 효과: 로고 가운데, 메뉴바 없앰
+  // gnb scroll 효과: 로고 가운데, 메뉴바 없앰 + top btn 나타남
   $(window).scroll(function(){
     if($(window).scrollTop() > 100){
       $(".logo img").addClass("logo_slide");
       $("nav>ul>li").hide();
-      $(".sideMenu ul").css({"position":"fixed", "margin-right": "18.5%"});
+      $(".sideMenu ul").css({"position":"fixed", "margin-right": "19%"});
+      $("#top_btn").show();
     } else {
       $(".logo img").removeClass("logo_slide");
       $("nav>ul>li").show();
       $(".sideMenu ul").css({"position":"absolute","margin-right":"0"});
+      $("#top_btn").hide();
     }
   });
 
@@ -164,8 +166,8 @@ $(document).ready(function(){
       } else {
         $("#event .btn_next").show();
       }
-    }
-  })
+    };
+  });
   
   // prev btn
   $("#event .btn_prev").click(function(){ 
@@ -185,6 +187,36 @@ $(document).ready(function(){
       } else {
         $("#event .btn_next").show();
       }
+    };
+  });
+
+
+  // *** identity ***
+  // 스크롤 효과: 해당 지점에 오면 텍스트 애니메이션
+  $(window).scroll(function(){
+    if($(window).scrollTop() > 1060){
+      $("#ident .ident1").show().addClass("ident1_slide");
+      $("#ident .ident2").show().addClass("ident2_slide");
+    } else {
+      $("#ident .ident1").hide().removeClass("ident1_slide");
+      $("#ident .ident2").hide().removeClass("ident2_slide");
     }
-  })
+  });
+
+  // *** tab menu ***
+  let button = $("#tab .tab_button>li");
+  let content = $("#tab .tab_content>li");
+
+  for(let i = 0; i < button.length; i++){
+    button.eq(i).click(function(){
+      tab(i);
+    });
+  }
+
+  function tab(i){
+    button.removeClass("selected");
+    button.eq(i).addClass("selected");
+    content.removeClass("show");
+    content.eq(i).addClass("show");
+  }
 });
