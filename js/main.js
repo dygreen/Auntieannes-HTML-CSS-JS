@@ -42,9 +42,20 @@ $(document).ready(function(){
 
   // **** side menu ***
   // side menu click 효과: 클릭하면 side 메뉴가 나타나는
-  $(".sideBtn").click(function(){
-    $(".sideMenu").stop().fadeToggle();
-  });
+  side = true;
+	$(".sideBtn").click(function(){
+		$(this).toggleClass("sideBtn_toggle");
+
+		if(side){
+			$(".sideMenu>ul").stop().animate({marginTop:"390px", "right":"0px"},500,"easeOutBack",function(){
+				side=false;
+			});	
+		} else {
+			$(".sideMenu>ul").stop().animate({marginTop:"0px"},500,function(){
+				side=true;
+			});
+		}
+	});
 
 
   // **** slide ****
@@ -131,19 +142,13 @@ $(document).ready(function(){
 
   // *** section ***
   // 수동 슬라이드 : 이미지 hover효과(배경이 깔리는)
-  function background(i){
-    $(".event_slide li").eq(i).hover(function(){
-      $(".event_slide .block").eq(i).show();
-      $(".event_slide .block").eq(i).addClass(`slide_background slide_color${i+1}`);
-      $(".event_slide .block p").eq(i).addClass("slide_text"); 
-    },function(){
-      $(".event_slide .block").eq(i).hide();
-    });
-  }
-
   $(".event_slide li").hover(function(){
     num = $(this).index();
-    background(num);
+    $(".event_slide .block").eq(num).show();
+    $(".event_slide .block").eq(num).addClass(`slide_background slide_color${num+1}`);
+    $(".event_slide .block p").eq(num).addClass("slide_text"); 
+  },function(){
+    $(".event_slide .block").eq(num).hide();
   });
 
   // 수동 슬라이드 + 이전/다음버튼
@@ -203,6 +208,7 @@ $(document).ready(function(){
     }
   });
 
+  
   // *** tab menu ***
   let button = $("#tab .tab_button>li");
   let content = $("#tab .tab_content>li");
