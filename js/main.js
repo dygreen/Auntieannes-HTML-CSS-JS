@@ -16,12 +16,12 @@ $(document).ready(function(){
       $(".logo img").addClass("logo_slide");
       $("nav>ul>li").hide();
       $(".sideMenu ul").css({"position":"fixed", "margin-right": "19%"});
-      $("#top_btn").show();
+      $("#top_btn").fadeIn();
     } else {
       $(".logo img").removeClass("logo_slide");
       $("nav>ul>li").show();
       $(".sideMenu ul").css({"position":"absolute","margin-right":"0"});
-      $("#top_btn").hide();
+      $("#top_btn").fadeOut();
     }
   });
 
@@ -39,6 +39,19 @@ $(document).ready(function(){
     $(this).find(">a").css({"color":"#666"});
   });
   
+  // 페이지 진척도
+  $(window).scroll(function(){
+    let scroll = $(window).scrollTop();
+    let height = $("body").prop("scrollHeight");
+    let prog = (scroll / height) * 100;
+    
+    if (prog < 72){
+      $(".page_box").css("width", `${prog}%`);
+    } else {
+      $(".page_box").css("width", "100%");
+    }
+  });
+
 
   // **** side menu ***
   // side menu click 효과: 클릭하면 side 메뉴가 나타나는
@@ -59,15 +72,15 @@ $(document).ready(function(){
 
 
   // **** slide ****
-  let img=$(".slide ul");
-  let img_list=$(".slide ul li");
-  let btn=$(".btn_bottom ul li");
-  let next=$(".btn_side .next");
-  let prev=$(".btn_side .prev");
-  let img_width=img_list.width();
-  let img_leng=img_list.length;
-  let img_old=0; 
-  let img_new=0;
+  let img = $(".slide ul");
+  let img_list = $(".slide ul li");
+  let btn = $(".btn_bottom ul li");
+  let next = $(".btn_side .next");
+  let prev = $(".btn_side .prev");
+  let img_width = img_list.width();
+  let img_leng = img_list.length;
+  let img_old = 0; 
+  let img_new = 0;
 
   // 메인 비주얼: 이미지 이동
   function slideImg(img_new){
@@ -141,6 +154,17 @@ $(document).ready(function(){
 
 
   // *** section ***
+  // 이벤트 텍스트 배경 스크롤 애니메이션
+  $(window).scroll(function(){
+    let scroll = $(window).scrollTop();
+    
+    if(scroll > 150){
+      $(".sub_back").stop().animate({"padding-left":"440px"}, 300);
+    } else {
+      $(".sub_back").stop().animate({"padding-left":"0px"}, 500);
+    }
+  });
+
   // 수동 슬라이드 : 이미지 hover효과(배경이 깔리는)
   $(".event_slide li").hover(function(){
     num = $(this).index();
@@ -225,4 +249,25 @@ $(document).ready(function(){
     content.removeClass("show");
     content.eq(i).addClass("show");
   }
+
+
+  // *** slider ***
+  // 자동 이미지 슬라이드 + hover시 멈춤
+  function slider(){
+    $("#slider ul").stop(true,true).animate({marginLeft:"-=216px"},1000,function(){
+      $("#slider ul li:first-child").appendTo("#slider ul"); 
+      $(this).css({marginLeft:"0px"});
+    });
+  }
+  
+  sliderAuto = setInterval(slider,2000);
+
+  // hover시 멈춤
+  $("#slider").hover(function(){
+    clearInterval(sliderAuto);
+  },function(){
+    sliderAuto=setInterval(slider,2000);
+  });
+
+
 });
