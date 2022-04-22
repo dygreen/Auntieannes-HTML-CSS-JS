@@ -25,6 +25,12 @@ $(document).ready(function(){
     }
   });
 
+  // top btn 클릭시 부드럽게 올라가는
+  $("#top_btn").click(function(){
+    $("html, body").animate({scrollTop : 0}, 600);
+    return false;
+  });
+
   // lnb hover 효과: 짝/홀에 따라 배경색이 달라지는
   $(".lnb li").hover(function(){
     let val = $(this).index();
