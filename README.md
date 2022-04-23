@@ -3,6 +3,8 @@
 > 
 > : 메인/서브 페이지로 디자인 작업한 작업물을 웹페이지로 구현해보는 프로젝트
 
+주소: http://pdyhosting.dothome.co.kr/auntieannes/index.html
+
 #### 메뉴바
 * 메인메뉴+서브메뉴+사이드메뉴 제작
 * 서브메뉴) .index()를 활용해 홀수번/짝수번째 메뉴로 나누어 hover효과 다르게 구현
