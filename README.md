@@ -5,7 +5,7 @@
 > 
 > [개인 프로젝트: 2022.04.08 ~ 2022.04.21]
 
-주소: http://pdyhosting.dothome.co.kr/auntieannes/index.html
+주소: https://dygreen.github.io/auntieannes/index.html
 
 ***Menu***
 * 메인메뉴+서브메뉴+사이드메뉴 제작
@@ -23,3 +23,5 @@
 * 탭 메뉴 기능
 * 자동 이미지 슬라이드: 이미지 끊김 없음(loop) +hover시 재생 멈춤 & 다시 재생
 * top버튼 클릭시 부드럽게 상단으로 올라감
+
+#### _* 자세한 프로젝트 실행과정 정리 (노션: https://prickle-turn-785.notion.site/AuntieAnne-s-56f94550516344e2be5cba258382fe0a)_
