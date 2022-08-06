@@ -1,11 +1,9 @@
-## Auntieannes(HTML,CSS,JS(jQuery))
->앤티앤스 프레즐 웹사이트 만들기(HTML, CSS, JavaScript)
-> 
-> : 메인/서브 페이지를 디자인 작업(리뉴얼)한 작업물을 웹페이지로 구현해보는 프로젝트
-> 
-> [개인 프로젝트: 2022.04.08 ~ 2022.04.21]
+## Auntieannes
+: 앤티앤스 프레즐 웹사이트 메인/서브 페이지를 디자인 작업(리뉴얼)한 작업물을 웹페이지로 구현
 
-주소: https://dygreen.github.io/auntieannes/index.html
+> [ 기간: 2022.04.08 ~ 2022.04.21 ]
+>
+> 주소: https://dygreen.github.io/auntieannes/index.html
 ***
 ### ***Menu***
 * 메인메뉴+서브메뉴+사이드메뉴 제작
@@ -24,4 +22,6 @@
 * 자동 이미지 슬라이드: 이미지 끊김 없음(loop) +hover시 재생 멈춤 & 다시 재생
 * top버튼 클릭시 부드럽게 상단으로 올라감
 
-#### _* 자세한 프로젝트 실행과정 정리 (노션: https://prickle-turn-785.notion.site/AuntieAnne-s-56f94550516344e2be5cba258382fe0a)_
+***
+
+#### _* 자세한 프로젝트 실행과정 정리 (노션: https://prickle-turn-785.notion.site/AuntieAnne-s-2b1833763bf44b2593c5f981e004e549)_
