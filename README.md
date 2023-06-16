@@ -24,4 +24,4 @@
 
 ***
 
-#### _* 자세한 프로젝트 실행과정 정리 (노션: https://prickle-turn-785.notion.site/AuntieAnne-s-2b1833763bf44b2593c5f981e004e549)_
+#### _* 자세한 프로젝트 실행과정 정리  ([노션](https://dygreen.notion.site/AuntieAnne-s-5a83f053c5f84592bca8ee1dd28dc06c?pvs=4))_
